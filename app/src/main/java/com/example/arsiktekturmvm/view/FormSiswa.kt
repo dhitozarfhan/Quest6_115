@@ -82,8 +82,9 @@ fun FormSiswa(
                         item->
                     Row(verticalAlignment = Alignment.CenterVertically){
                         RadioButton(
-                            selected = false,
-                            onClick = {item}
+                            selected =  txtGender == item,
+                            onClick = {
+                                txtGender=item}
                         )
                         Text(text = item)
                     }
