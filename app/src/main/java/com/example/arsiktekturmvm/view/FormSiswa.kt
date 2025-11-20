@@ -31,6 +31,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.arsiktekturmvm.R
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormSiswa(
@@ -56,3 +57,19 @@ fun FormSiswa(
                     (containerColor = colorResource(id = R.color.teal_700))
             )
         }
+    ){ isiRuang ->
+        Column(modifier = Modifier.padding(paddingValues = isiRuang),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
+            OutlinedTextField(
+                value = txtNama,
+                singleLine = true,
+                modifier = Modifier
+                    .padding(top = 20.dp)
+                    .width(width = 250.dp),
+                label = {Text(text = "Nama Lengkap")},
+                onValueChange = {
+                    txtNama = it
+                },
+            )
