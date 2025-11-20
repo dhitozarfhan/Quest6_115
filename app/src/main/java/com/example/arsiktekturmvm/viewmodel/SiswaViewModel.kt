@@ -15,7 +15,7 @@ class SiswaViewModel : ViewModel() {
     // Request: val statusUI: StateFlow<Siswa> = _statusUI.asStateFlow()
     val statusUI: StateFlow<Siswa> = _statusUI.asStateFlow()
 
-    fun saveDataSiswa(ls: MutableList<String>) {
+    fun setSiswa(ls: MutableList<String>) {
         _statusUI.update { statusSaatIni ->
             statusSaatIni.copy(
                 nama = ls[0],
