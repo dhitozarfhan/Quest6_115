@@ -3,5 +3,6 @@
     <string name="laki">Laki-Laki</string>
     <string name="wanita">Perempuan</string>
     <string name="submit">SUBMIT</string>
+    <string name="back">Back</string>
 
 </resources>
